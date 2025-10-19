@@ -1,1 +1,0 @@
-/home/thwcs7/study/Linux_Device_Driver_Programming_BBB_Udemy/01_simple_LKM/mymodule.o

@@ -1,1 +1,0 @@
-savedcmd_/home/thwcs7/study/Linux_Device_Driver_Programming_BBB_Udemy/01_simple_LKM/mymodule.mod := printf '%s\n'   mymodule.o | awk '!x[$$0]++ { print("/home/thwcs7/study/Linux_Device_Driver_Programming_BBB_Udemy/01_simple_LKM/"$$0) }' > /home/thwcs7/study/Linux_Device_Driver_Programming_BBB_Udemy/01_simple_LKM/mymodule.mod
