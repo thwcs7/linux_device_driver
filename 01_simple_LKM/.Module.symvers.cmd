@@ -1,0 +1,1 @@
+savedcmd_/home/thwcs7/study/Linux_Device_Driver_Programming_BBB_Udemy/01_simple_LKM/Module.symvers :=  scripts/mod/modpost -M -m -a      -o /home/thwcs7/study/Linux_Device_Driver_Programming_BBB_Udemy/01_simple_LKM/Module.symvers -T /home/thwcs7/study/Linux_Device_Driver_Programming_BBB_Udemy/01_simple_LKM/modules.order -i Module.symvers -e 

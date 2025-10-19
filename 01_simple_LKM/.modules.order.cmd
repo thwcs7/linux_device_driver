@@ -1,0 +1,1 @@
+savedcmd_/home/thwcs7/study/Linux_Device_Driver_Programming_BBB_Udemy/01_simple_LKM/modules.order := {   echo /home/thwcs7/study/Linux_Device_Driver_Programming_BBB_Udemy/01_simple_LKM/mymodule.o; :; } > /home/thwcs7/study/Linux_Device_Driver_Programming_BBB_Udemy/01_simple_LKM/modules.order
