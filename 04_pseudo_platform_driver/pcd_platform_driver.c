@@ -262,7 +262,7 @@ static int __init pcd_platform_driver_init(void)
     }
 
     /* 2. Create device class under /sys/class */
-    pcdrv_data.class_pcd = class_create("pcd_class");
+    pcdrv_data.class_pcd = class_create(THIS_MODULE, "pcd_class");
     if(IS_ERR(pcdrv_data.class_pcd)) {
         pr_err("Class create failed\n");
         ret = PTR_ERR(pcdrv_data.class_pcd);
