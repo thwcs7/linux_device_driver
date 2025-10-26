@@ -1,4 +1,4 @@
-obj-m += pcd_device_setup.o pcd_platform_driver.o
+obj-m += pcd_platform_driver_dt.o
 
 ARCH=arm
 CROSS=/home/thwcs7/working_space/BBB/kernelbuildscripts/dl/gcc-8.5.0-nolibc/arm-linux-gnueabi/bin/arm-linux-gnueabi-
@@ -23,5 +23,8 @@ build_app:
 	$(GCC_APP_DIR) -o app app.c
 
 copy:
-	scp pcd_device_setup.ko debian@10.42.0.175:/home/debian/
+	scp pcd_platform_driver_dt.ko debian@10.42.0.175:/home/debian/
+
+copy-dtb:
+	scp /home/thwcs7/working_space/BBB/kernelbuildscripts/KERNEL/arch/arm/boot/dts/am335x-boneblack.dtb debian@10.42.0.175:/home/debian/
 	
