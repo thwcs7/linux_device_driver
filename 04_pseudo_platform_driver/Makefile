@@ -23,5 +23,5 @@ build_app:
 	$(GCC_APP_DIR) -o app app.c
 
 copy:
-	scp pcd_device_setup.ko debian@10.42.0.175:/home/debian/
+	scp pcd_device_setup.ko pcd_platform_driver.ko debian@10.42.0.175:/home/debian/platform_driver
 	

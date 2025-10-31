@@ -229,8 +229,8 @@ static int pcd_platform_driver_remove(struct platform_device *pdev)
 
 struct platform_device_id pcdevs_ids[] =
 {
-    [0] = {.name = "pcdev-A1x", .driver_data = PCDEVA1X},
-    [1] = {.name = "pcdev-B1x", .driver_data = PCDEVB1X},
+    {.name = "pcdev-A1x", .driver_data = PCDEVA1X},
+    {.name = "pcdev-B1x", .driver_data = PCDEVB1X},
 
     {   }
 };
@@ -292,6 +292,8 @@ static void __exit pcd_platform_driver_exit(void)
 
 module_init(pcd_platform_driver_init);
 module_exit(pcd_platform_driver_exit);
+
+// module_platform_driver(pcd_platform_driver);
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Ngo Xuan Thuc");
