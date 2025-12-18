@@ -1,7 +1,0 @@
-{
-    "files.associations": {
-        "platform.h": "c",
-        "module.h": "c",
-        "fs.h": "c"
-    }
-}
